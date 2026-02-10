@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.dark {
+    background: #222;
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.dark form {
+    background: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+}
+
+button:hover {
+    background: #007BFF;
+    color: white;
+}
+
+input:focus {
+    outline: 2px solid #007BFF;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.participant {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+}
+
+.priority {
+    border-left: 5px solid gold;
+    background: #fffbe6;
+}
+
+.participant button {
+    margin-right: 5px;
+}

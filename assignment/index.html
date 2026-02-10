@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Workshop Registration System</h1>
+</header>
+
+<main>
+
+    <!-- Theme Toggle (Bonus) -->
+    <button id="themeToggle">Toggle Dark Mode</button>
+
+    <!-- Registration Form -->
+    <section class="form-container">
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="fullName">
+                <small class="error hidden"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="email">
+                <small class="error hidden"></small>
+            </div>
+
+            <div class="form-group">
+                <label>Workshop Type</label>
+                <select id="workshop">
+                    <option value="">Select</option>
+                    <option>Web Development</option>
+                    <option>Artificial Intelligence</option>
+                    <option>UI/UX Design</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Experience Level</label>
+                <div>
+                    <input type="radio" name="experience" value="Beginner"> Beginner
+                    <input type="radio" name="experience" value="Intermediate"> Intermediate
+                    <input type="radio" name="experience" value="Advanced"> Advanced
+                </div>
+                <small class="error hidden"></small>
+            </div>
+
+            <div class="form-group">
+                <input type="checkbox" id="agreement"> I agree to the Code of Conduct
+                <small class="error hidden"></small>
+            </div>
+
+            <button type="submit">Register</button>
+
+        </form>
+    </section>
+
+    <!-- Filter -->
+    <section class="filter">
+        <label>Filter by Workshop:</label>
+        <select id="filterWorkshop">
+            <option value="All">All</option>
+            <option>Web Development</option>
+            <option>Artificial Intelligence</option>
+            <option>UI/UX Design</option>
+        </select>
+    </section>
+
+    <!-- Participant List -->
+    <section>
+        <p id="emptyState">No participants registered yet</p>
+        <div id="participantList"></div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
